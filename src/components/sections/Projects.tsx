@@ -1,6 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
 import { siteContent } from "../../data/content"
-import { ExternalLink } from "lucide-react"
 import React from "react"
 
 const ProjectCard = ({ project, index }: { project: any, index: number }) => {
