@@ -54,9 +54,6 @@ export function Hero() {
               {hero.ctaText}
               <ArrowRight size={18} />
             </Button>
-            <Button size="lg" variant="secondary" className="w-full sm:w-auto" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-              Contact Me
-            </Button>
           </motion.div>
         </div>
       </div>

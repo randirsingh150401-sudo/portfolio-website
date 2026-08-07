@@ -101,7 +101,7 @@ export function Projects() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 [perspective:1000px]">
+        <div className="flex flex-col gap-16 lg:gap-24 max-w-4xl mx-auto [perspective:1000px]">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}

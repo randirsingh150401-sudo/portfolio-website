@@ -6,8 +6,7 @@ const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
-  { name: "Skills", href: "#skills" },
-  { name: "Contact", href: "#contact" }
+  { name: "Skills", href: "#skills" }
 ]
 
 export function Navbar() {
@@ -73,9 +72,6 @@ export function Navbar() {
           ))}
         </nav>
 
-        <a href="#contact" className="hidden md:inline-flex px-5 py-2.5 rounded-full bg-white text-black font-medium text-sm hover:scale-105 transition-transform">
-          Hire Me
-        </a>
       </div>
     </motion.header>
   )
