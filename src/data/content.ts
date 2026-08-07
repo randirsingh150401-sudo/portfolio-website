@@ -1,4 +1,5 @@
 import youtubeAgentVideo from "../assets/0807.mov";
+import mainVideo from "../assets/main.mov";
 
 export const siteContent = {
   hero: {
@@ -28,11 +29,12 @@ export const siteContent = {
     },
     {
       id: "project-2",
-      title: "[Project Two - Dev Tool]",
-      description: "An open-source developer tool that simplifies API testing. Adopted by over 5,000 developers worldwide.",
-      techStack: ["Rust", "CLI", "WebAssembly"],
+      title: "AI Desktop Assistant",
+      description: "An intelligent desktop assistant that takes screenshots and understands your problems across any field, providing instant, contextual help.",
+      techStack: ["Python", "OpenAI Vision", "PyAutoGUI", "Desktop App"],
       link: "https://example.com",
       imagePlaceholder: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
+      videoPlaceholder: mainVideo,
     },
     {
       id: "project-3",
