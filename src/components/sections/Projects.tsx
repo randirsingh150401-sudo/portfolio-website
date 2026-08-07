@@ -56,11 +56,22 @@ const ProjectCard = ({ project, index }: { project: any, index: number }) => {
       />
       
       <div className="relative aspect-video rounded-2xl overflow-hidden mb-6" style={{ transform: "translateZ(30px)" }}>
-        <img 
-          src={project.imagePlaceholder} 
-          alt={project.title} 
-          className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700"
-        />
+        {project.videoPlaceholder ? (
+          <video
+            src={project.videoPlaceholder}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 pointer-events-none"
+          />
+        ) : (
+          <img 
+            src={project.imagePlaceholder} 
+            alt={project.title} 
+            className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700"
+          />
+        )}
         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
           <a href={project.link} target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-white/20 hover:scale-110 transition-all text-white">
             <ExternalLink size={24} />

@@ -1,3 +1,5 @@
+import youtubeAgentVideo from "../assets/0807.mov";
+
 export const siteContent = {
   hero: {
     name: "[Your Name]",
@@ -17,11 +19,12 @@ export const siteContent = {
   projects: [
     {
       id: "project-1",
-      title: "[Project One - SaaS App]",
-      description: "A comprehensive SaaS platform that automates workflows for small businesses. Built to scale from day one with a focus on exceptional UX.",
-      techStack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
+      title: "YouTube Automation Agent",
+      description: "An automated agent that creates and uploads YouTube videos, connected directly with Telegram for seamless monitoring and control.",
+      techStack: ["Python", "Telegram API", "YouTube API", "FFmpeg"],
       link: "https://example.com",
       imagePlaceholder: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+      videoPlaceholder: youtubeAgentVideo,
     },
     {
       id: "project-2",
