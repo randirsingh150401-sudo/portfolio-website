@@ -3,7 +3,7 @@ export const siteContent = {
     name: "[Your Name]",
     tagline: "[e.g., I build products people actually use]",
     description:
-      "A developer/founder crafting high-quality software, fast web applications, and intuitive user experiences. Passionate about turning complex problems into elegant solutions.",
+      "A developer crafting high-quality software, fast web applications, and intuitive user experiences. Passionate about turning complex problems into elegant solutions.",
     ctaText: "View my work",
   },
   about: {

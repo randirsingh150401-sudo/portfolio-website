@@ -21,7 +21,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface/50 border border-primary/20 text-primary mb-8 backdrop-blur-sm"
           >
             <Terminal size={16} />
-            <span className="text-sm font-medium tracking-wide">Developer & Founder</span>
+            <span className="text-sm font-medium tracking-wide">Developer</span>
           </motion.div>
 
           <motion.h1
