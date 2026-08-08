@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { cn } from "../utils"
+import logoImg from "../assets/logo.jpg"
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -46,7 +47,7 @@ export function Navbar() {
     >
       <div className="container px-6 mx-auto flex items-center justify-between">
         <a href="#home" className="text-xl font-display font-bold tracking-tighter flex items-center gap-2 group">
-          <img src="/logo.jpg" alt="Vizora Logo" className="w-8 h-8 object-contain rounded-lg group-hover:scale-110 transition-transform" />
+          <img src={logoImg} alt="Vizora Logo" className="w-8 h-8 object-contain rounded-lg group-hover:scale-110 transition-transform" />
           <span className="hidden sm:inline">Vizora</span>
         </a>
 
