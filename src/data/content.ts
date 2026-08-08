@@ -13,7 +13,7 @@ export const siteContent = {
   about: {
     title: "About Me",
     bio: [
-      "I'm an indie hacker and software developer focused on building scalable, user-centric applications.",
+      "I'm an indian software developer focused on building scalable, ai agent who really matters.",
       "Currently, I'm building [SaaS Product Name], an innovative solution that helps teams [solve a specific problem]. Before that, I worked as a [Previous Role] at [Company], where I spearheaded [Key Achievement].",
       "When I'm not coding, you'll probably find me exploring new technologies, writing about my learnings, or designing UI concepts."
     ],
