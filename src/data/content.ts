@@ -34,7 +34,6 @@ export const siteContent = {
       title: "AI Desktop Assistant",
       description: "An intelligent desktop assistant that takes screenshots and understands your problems across any field, providing instant, contextual help.",
       techStack: ["Python", "OpenAI Vision", "PyAutoGUI", "Desktop App"],
-      link: "https://example.com",
       imagePlaceholder: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
       videoPlaceholder: mainVideo,
     },
@@ -43,7 +42,6 @@ export const siteContent = {
       title: "3D Modern Website",
       description: "A visually stunning website featuring interactive 3D elements and modern design principles, creating an immersive user experience.",
       techStack: ["React", "Three.js", "React Three Fiber", "Framer Motion"],
-      link: "https://example.com",
       imagePlaceholder: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1000",
       videoPlaceholder: jwVideo,
     }
