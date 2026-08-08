@@ -107,7 +107,7 @@ export function Projects() {
         <div className="mb-16 md:mb-24 flex items-center justify-between">
           <h2 className="text-3xl md:text-5xl font-bold flex items-center gap-4">
             <span className="w-12 h-1 bg-accent rounded-full block" />
-            Selected Work
+            Portfolio
           </h2>
         </div>
 

@@ -11,7 +11,7 @@ export const siteContent = {
     ctaText: "View my work",
   },
   about: {
-    title: "About Me",
+    title: "About Us",
     bio: [
       "I'm an indian software developer focused on building scalable, ai agent who really matters.",
       "Currently, I'm building [SaaS Product Name], an innovative solution that helps teams [solve a specific problem]. Before that, I worked as a [Previous Role] at [Company], where I spearheaded [Key Achievement].",
