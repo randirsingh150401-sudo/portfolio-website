@@ -64,11 +64,11 @@ export const siteContent = {
       },
       {
         name: "Backend",
-        skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Redis", "GraphQL"]
+        skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Redis", "GraphQL", "Python", "JavaScript", "React"]
       },
       {
         name: "Tools & DevOps",
-        skills: ["Git", "Docker", "AWS", "Vercel", "Linux", "CI/CD"]
+        skills: ["Git", "Docker", "AWS", "Vercel", "Linux", "CI/CD", "Render", "Sarvam AI", "Supabase", "GitHub", "ElevenLabs"]
       }
     ]
   },
