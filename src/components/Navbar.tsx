@@ -46,10 +46,8 @@ export function Navbar() {
     >
       <div className="container px-6 mx-auto flex items-center justify-between">
         <a href="#home" className="text-xl font-display font-bold tracking-tighter flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold group-hover:scale-110 transition-transform">
-            PF
-          </div>
-          <span className="hidden sm:inline">Portfolio</span>
+          <img src="/logo.jpg" alt="Vizora Logo" className="w-8 h-8 object-contain rounded-lg group-hover:scale-110 transition-transform" />
+          <span className="hidden sm:inline">Vizora</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-1 bg-surface/50 border border-white/10 rounded-full px-2 py-1">
