@@ -4,8 +4,8 @@ import jwVideo from "../assets/jw.mov";
 
 export const siteContent = {
   hero: {
-    name: "[Your Name]",
-    tagline: "[e.g., I build products people actually use]",
+    name: "an AI Agent Expert",
+    tagline: "& Advanced Tools Specialist",
     description:
       "A developer crafting high-quality software, fast web applications, and intuitive user experiences. Passionate about turning complex problems into elegant solutions.",
     ctaText: "View my work",
