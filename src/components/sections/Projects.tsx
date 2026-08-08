@@ -76,13 +76,23 @@ const ProjectCard = ({ project, index }: { project: any, index: number }) => {
       <div className="px-4 pb-6" style={{ transform: "translateZ(20px)" }}>
         <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
         <p className="text-text-secondary mb-6 line-clamp-2">{project.description}</p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mb-6">
           {project.techStack.map((tech: string) => (
             <span key={tech} className="px-3 py-1 text-sm rounded-full bg-white/5 text-text-secondary border border-white/10">
               {tech}
             </span>
           ))}
         </div>
+        {project.link && (
+          <a 
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+          >
+            {project.linkText || "View Project"}
+          </a>
+        )}
       </div>
     </motion.div>
   )
