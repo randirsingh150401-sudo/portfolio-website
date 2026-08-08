@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { cn } from "../utils"
-import logoImg from "../assets/logo.jpg"
+import logoImg from "../assets/hv.jpg"
 
 const navItems = [
   { name: "Home", href: "#home" },
