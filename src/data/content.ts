@@ -1,5 +1,6 @@
 import youtubeAgentVideo from "../assets/0807.mov";
 import mainVideo from "../assets/main.mov";
+import jwVideo from "../assets/jw.mov";
 
 export const siteContent = {
   hero: {
@@ -38,11 +39,12 @@ export const siteContent = {
     },
     {
       id: "project-3",
-      title: "[Project Three - Mobile App]",
-      description: "A cross-platform mobile application focused on mental wellness, featuring real-time data synchronization.",
-      techStack: ["React Native", "Firebase", "Zustand"],
+      title: "3D Modern Website",
+      description: "A visually stunning website featuring interactive 3D elements and modern design principles, creating an immersive user experience.",
+      techStack: ["React", "Three.js", "React Three Fiber", "Framer Motion"],
       link: "https://example.com",
       imagePlaceholder: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1000",
+      videoPlaceholder: jwVideo,
     },
     {
       id: "project-4",
