@@ -25,6 +25,8 @@ export const siteContent = {
       title: "Marketing Autonomous AI",
       description: "An autonomous AI system designed to help in marketing by automating campaigns, analyzing data, and optimizing growth strategies.",
       techStack: ["Python", "OpenAI", "Marketing Automation", "Data Analytics"],
+      link: "https://floatingiq.com",
+      linkText: "View Website",
       imagePlaceholder: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
       videoPlaceholder: marketingAiVideo,
     },
