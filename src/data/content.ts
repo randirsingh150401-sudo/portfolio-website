@@ -1,6 +1,6 @@
 import marketingAiVideo from "../assets/0809.mov";
 import youtubeAgentVideo from "../assets/h.mov";
-import mainVideo from "../assets/main.mov";
+import desktopAssistantImg from "../assets/y.jpg";
 import jwVideo from "../assets/jw.mov";
 
 export const siteContent = {
@@ -45,8 +45,7 @@ export const siteContent = {
       title: "AI Desktop Assistant",
       description: "An intelligent desktop assistant that takes screenshots and understands your problems across any field, providing instant, contextual help.",
       techStack: ["Python", "OpenAI Vision", "PyAutoGUI", "Desktop App"],
-      imagePlaceholder: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
-      videoPlaceholder: mainVideo,
+      imagePlaceholder: desktopAssistantImg,
     },
     {
       id: "project-3",
