@@ -1,3 +1,4 @@
+import marketingAiVideo from "../assets/0809.mov";
 import youtubeAgentVideo from "../assets/0807.mov";
 import mainVideo from "../assets/main.mov";
 import jwVideo from "../assets/jw.mov";
@@ -19,6 +20,14 @@ export const siteContent = {
     ],
   },
   projects: [
+    {
+      id: "project-0",
+      title: "Marketing Autonomous AI",
+      description: "An autonomous AI system designed to help in marketing by automating campaigns, analyzing data, and optimizing growth strategies.",
+      techStack: ["Python", "OpenAI", "Marketing Automation", "Data Analytics"],
+      imagePlaceholder: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+      videoPlaceholder: marketingAiVideo,
+    },
     {
       id: "project-1",
       title: "YouTube Automation Agent",
