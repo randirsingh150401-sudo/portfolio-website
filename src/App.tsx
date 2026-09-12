@@ -16,7 +16,7 @@ function App() {
         <Projects />
         <Skills />
       </main>
-      <footer className="py-8 text-center text-text-secondary text-sm border-t border-white/5">
+      <footer className="py-8 text-center text-text-secondary text-sm border-t border-white/10 bg-surface/20 backdrop-blur-sm">
         <p>© {new Date().getFullYear()} — Built with React & Vite.</p>
       </footer>
       </div>

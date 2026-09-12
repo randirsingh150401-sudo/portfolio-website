@@ -42,7 +42,9 @@ export function Skills() {
             <motion.div
               key={category.name}
               variants={fadeUp}
-              className="bg-surface rounded-3xl p-8 border border-white/5 hover:border-primary/20 transition-colors"
+              whileHover={{ scale: 1.015, y: -4 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              className="bg-surface/40 backdrop-blur-xl rounded-3xl p-8 border border-white/10 transition-[border-color,box-shadow] duration-500 shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4),0_0_60px_-12px_rgba(var(--color-primary-rgb)/0.35)]"
             >
               <h3 className="text-xl font-bold mb-6 text-gradient inline-block">{category.name}</h3>
               <motion.div 
@@ -56,7 +58,7 @@ export function Skills() {
                   <motion.span 
                     key={skill}
                     variants={item}
-                    whileHover={{ scale: 1.05, backgroundColor: "var(--color-primary)", color: "#fff", borderColor: "var(--color-primary)" }}
+                    whileHover={{ scale: 1.05, backgroundColor: "var(--color-primary)", color: "var(--color-background)", borderColor: "var(--color-primary)" }}
                     className="px-4 py-2 rounded-xl bg-background border border-white/10 text-sm font-medium transition-colors cursor-default"
                   >
                     {skill}
