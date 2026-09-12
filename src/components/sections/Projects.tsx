@@ -1,11 +1,12 @@
 import { motion, useMotionValue, useSpring, useTransform, useReducedMotion } from "framer-motion"
 import { siteContent } from "../../data/content"
-import { useFadeUpVariants, useStaggerContainer, viewportOnce } from "../../lib/motion"
+import { useFadeUpVariants, useStaggerContainer, useFinePointer, viewportOnce } from "../../lib/motion"
 import React from "react"
 
 const ProjectCard = ({ project }: { project: any }) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const prefersReducedMotion = useReducedMotion();
+  const isFinePointer = useFinePointer();
   const fadeUp = useFadeUpVariants();
 
   // Mouse hover effect logic
@@ -23,7 +24,7 @@ const ProjectCard = ({ project }: { project: any }) => {
   });
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (prefersReducedMotion) return;
+    if (prefersReducedMotion || !isFinePointer) return;
     if (!ref.current) return;
     const rect = ref.current.getBoundingClientRect();
     const width = rect.width;
@@ -47,7 +48,7 @@ const ProjectCard = ({ project }: { project: any }) => {
         ref={ref}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        whileHover={{ scale: 1.015, y: -4 }}
+        whileHover={isFinePointer ? { scale: 1.015, y: -4 } : undefined}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
         style={{
           rotateY,
