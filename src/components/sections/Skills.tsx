@@ -24,7 +24,7 @@ export function Skills() {
 
   return (
     <section id="skills" className="py-24 md:py-32 relative bg-surface/30 overflow-hidden">
-      <div className="ambient-glow top-[15%] left-[50%] -translate-x-1/2 w-[600px] h-[400px] bg-accent/8" />
+      <div className="ambient-glow top-[15%] left-[50%] -translate-x-1/2 w-[600px] h-[400px] bg-accent/13" />
 
       <div className="container px-6 mx-auto relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center">
@@ -44,7 +44,7 @@ export function Skills() {
               variants={fadeUp}
               whileHover={{ scale: 1.015, y: -4 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="bg-surface/40 backdrop-blur-xl rounded-3xl p-8 border border-white/10 transition-[border-color,box-shadow] duration-500 shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4),0_0_60px_-12px_rgba(var(--color-primary-rgb)/0.35)]"
+              className="bg-surface/40 backdrop-blur-xl rounded-3xl p-8 border border-white/10 transition-[border-color,box-shadow] duration-500 shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4),0_0_60px_-12px_rgba(var(--color-primary-rgb)/0.42)]"
             >
               <h3 className="text-xl font-bold mb-6 text-gradient inline-block">{category.name}</h3>
               <motion.div 

@@ -72,9 +72,9 @@ export function GlassPolyhedron() {
                   transform: face.transform,
                   background:
                     i % 2 === 0
-                      ? "linear-gradient(135deg, rgba(var(--color-primary-rgb) / 0.28), rgba(var(--color-accent-rgb) / 0.08))"
-                      : "linear-gradient(135deg, rgba(var(--color-accent-rgb) / 0.22), rgba(var(--color-primary-rgb) / 0.06))",
-                  boxShadow: "inset 0 0 40px rgba(255,255,255,0.06), 0 0 60px rgba(var(--color-primary-rgb) / 0.15)",
+                      ? "linear-gradient(135deg, rgba(var(--color-primary-rgb) / 0.36), rgba(var(--color-accent-rgb) / 0.14))"
+                      : "linear-gradient(135deg, rgba(var(--color-accent-rgb) / 0.30), rgba(var(--color-primary-rgb) / 0.12))",
+                  boxShadow: "inset 0 0 40px rgba(255,255,255,0.08), 0 0 70px rgba(var(--color-primary-rgb) / 0.22)",
                 }}
               />
             ))}

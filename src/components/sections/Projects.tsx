@@ -55,7 +55,7 @@ const ProjectCard = ({ project }: { project: any }) => {
           rotateX,
           transformStyle: "preserve-3d",
         }}
-        className="group relative rounded-3xl bg-surface/40 backdrop-blur-xl border border-white/10 p-2 overflow-hidden transition-[border-color,box-shadow] duration-500 shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4),0_0_60px_-12px_rgba(var(--color-primary-rgb)/0.35)]"
+        className="group relative rounded-3xl bg-surface/40 backdrop-blur-xl border border-white/10 p-2 overflow-hidden transition-[border-color,box-shadow] duration-500 shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4),0_0_60px_-12px_rgba(var(--color-primary-rgb)/0.42)]"
       >
         <div
           className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -68,7 +68,7 @@ const ProjectCard = ({ project }: { project: any }) => {
         />
 
         <div
-          className={`relative rounded-2xl overflow-hidden mb-6 border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35),0_0_30px_-12px_rgba(var(--color-accent-rgb)/0.3)] ${project.videoPlaceholder ? 'w-full' : 'aspect-video'}`}
+          className={`relative rounded-2xl overflow-hidden mb-6 border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35),0_0_30px_-12px_rgba(var(--color-accent-rgb)/0.38)] ${project.videoPlaceholder ? 'w-full' : 'aspect-video'}`}
           style={{ transform: "rotateX(4deg) rotateY(-6deg) translateZ(30px)" }}
         >
           {project.videoPlaceholder ? (
@@ -121,8 +121,8 @@ export function Projects() {
 
   return (
     <section id="projects" className="py-24 md:py-32 relative overflow-hidden">
-      <div className="ambient-glow top-[5%] -right-[15%] w-[550px] h-[550px] bg-primary/8" />
-      <div className="ambient-glow bottom-[10%] -left-[15%] w-[500px] h-[500px] bg-accent/8" />
+      <div className="ambient-glow top-[5%] -right-[15%] w-[550px] h-[550px] bg-primary/13" />
+      <div className="ambient-glow bottom-[10%] -left-[15%] w-[500px] h-[500px] bg-accent/13" />
 
       <div className="container px-6 mx-auto relative z-10">
         <div className="mb-16 md:mb-24 flex items-center justify-between">

@@ -3,12 +3,12 @@
 @theme {
   --font-display: "Outfit", sans-serif;
   --font-sans: "Inter", sans-serif;
-  --color-primary: #e879f9; /* Fuchsia */
+  --color-primary: #ee88fd; /* Fuchsia — brighter, more saturated */
   --color-primary-hover: #d946ef;
-  --color-accent: #fb923c; /* Orange */
-  --color-glow-rose: #fb7185; /* Rose — third stop, blobs/glows only, never buttons/CTAs */
-  --color-background: #0d0d0f; /* Light black */
-  --color-surface: #161618; /* Slightly lighter */
+  --color-accent: #fe9d4d; /* Orange — brighter, more saturated */
+  --color-glow-rose: #fe8092; /* Rose — third stop, blobs/glows only, never buttons/CTAs */
+  --color-background: #131316; /* Lifted from near-black for a brighter base */
+  --color-surface: #1c1c1f; /* Lifted to match */
   --color-text-primary: #f1f5f9;
   --color-text-secondary: #94a3b8;
 }
@@ -18,8 +18,8 @@
    color-opacity utilities can't reach. Keeping these as the single source
    avoids the palette drifting out of sync across files when it changes. */
 :root {
-  --color-primary-rgb: 232 121 249;
-  --color-accent-rgb: 251 146 60;
+  --color-primary-rgb: 238 136 253;
+  --color-accent-rgb: 254 157 77;
 }
 
 @layer base {
@@ -66,8 +66,8 @@
   width: 200%;
   height: 200%;
   background-image:
-    linear-gradient(rgba(var(--color-primary-rgb) / 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(var(--color-primary-rgb) / 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(var(--color-primary-rgb) / 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--color-primary-rgb) / 0.09) 1px, transparent 1px);
   background-size: 60px 60px;
   animation: gridMove 20s linear infinite;
 }
@@ -77,8 +77,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(var(--color-primary-rgb) / 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(var(--color-accent-rgb) / 0.07) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(var(--color-primary-rgb) / 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(var(--color-accent-rgb) / 0.10) 0%, transparent 60%);
 }
 
 @keyframes gridMove {
