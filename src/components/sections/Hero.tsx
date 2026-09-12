@@ -46,7 +46,7 @@ export function Hero() {
       <motion.div style={{ y: blobY }} className="absolute inset-0 pointer-events-none">
         <div className="hero-blob animate-blob-1 top-[10%] left-[15%] w-[600px] h-[600px] bg-primary/18" />
         <div className="hero-blob animate-blob-2 top-[35%] right-[10%] w-[500px] h-[500px] bg-accent/14" />
-        <div className="hero-blob animate-blob-3 bottom-[5%] left-[35%] w-[450px] h-[450px] bg-primary/10" />
+        <div className="hero-blob animate-blob-3 bottom-[5%] left-[35%] w-[450px] h-[450px] bg-glow-rose/12" />
       </motion.div>
 
       <div className="container px-6 mx-auto relative z-10">
