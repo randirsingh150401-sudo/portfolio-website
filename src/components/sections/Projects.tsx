@@ -119,8 +119,11 @@ export function Projects() {
   const stagger = useStaggerContainer(0.15);
 
   return (
-    <section id="projects" className="py-24 md:py-32 relative">
-      <div className="container px-6 mx-auto">
+    <section id="projects" className="py-24 md:py-32 relative overflow-hidden">
+      <div className="ambient-glow top-[5%] -right-[15%] w-[550px] h-[550px] bg-primary/8" />
+      <div className="ambient-glow bottom-[10%] -left-[15%] w-[500px] h-[500px] bg-accent/8" />
+
+      <div className="container px-6 mx-auto relative z-10">
         <div className="mb-16 md:mb-24 flex items-center justify-between">
           <h2 className="text-3xl md:text-5xl font-bold flex items-center gap-4">
             <span className="w-12 h-1 bg-accent rounded-full block" />

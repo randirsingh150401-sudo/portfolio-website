@@ -23,8 +23,10 @@ export function Skills() {
   };
 
   return (
-    <section id="skills" className="py-24 md:py-32 relative bg-surface/30">
-      <div className="container px-6 mx-auto">
+    <section id="skills" className="py-24 md:py-32 relative bg-surface/30 overflow-hidden">
+      <div className="ambient-glow top-[15%] left-[50%] -translate-x-1/2 w-[600px] h-[400px] bg-accent/8" />
+
+      <div className="container px-6 mx-auto relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center">
           {skills.title}
         </h2>

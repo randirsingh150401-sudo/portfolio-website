@@ -7,8 +7,11 @@ export function About() {
   const fadeUp = useFadeUpVariants();
 
   return (
-    <section id="about" className="py-24 md:py-32 relative">
-      <div className="container px-6 mx-auto">
+    <section id="about" className="py-24 md:py-32 relative overflow-hidden">
+      <div className="ambient-glow top-[10%] -left-[10%] w-[500px] h-[500px] bg-primary/10" />
+      <div className="ambient-glow bottom-[5%] -right-[10%] w-[450px] h-[450px] bg-accent/8" />
+
+      <div className="container px-6 mx-auto relative z-10">
         <motion.div
           variants={fadeUp}
           initial="hidden"

@@ -89,6 +89,15 @@
   will-change: transform;
 }
 
+/* Static ambient glow reused on non-hero sections so the theme carries
+   through the whole page background, not just the hero */
+.ambient-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(110px);
+  pointer-events: none;
+}
+
 @keyframes blobDrift1 {
   0%, 100% { transform: translate(0, 0) scale(1); }
   50% { transform: translate(60px, -40px) scale(1.1); }
