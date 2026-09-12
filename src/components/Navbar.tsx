@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { motion, useReducedMotion } from "framer-motion"
 import { cn } from "../utils"
 import logoImg from "../assets/hv.jpg"
 
@@ -13,6 +13,7 @@ const navItems = [
 export function Navbar() {
   const [active, setActive] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,7 +64,11 @@ export function Navbar() {
                 <motion.div
                   layoutId="activeTab"
                   className="absolute inset-0 bg-white/10 rounded-full"
-                  transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  transition={
+                    prefersReducedMotion
+                      ? { duration: 0 }
+                      : { type: "spring", stiffness: 380, damping: 30 }
+                  }
                 />
               )}
               <span className="relative z-10">{item.name}</span>

@@ -79,3 +79,51 @@
     transform: translate(60px, 60px);
   }
 }
+
+/* Hero gradient-mesh blobs */
+.hero-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(100px);
+  pointer-events: none;
+  will-change: transform;
+}
+
+@keyframes blobDrift1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(60px, -40px) scale(1.1); }
+}
+
+@keyframes blobDrift2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-50px, 50px) scale(0.95); }
+}
+
+@keyframes blobDrift3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, 60px) scale(1.05); }
+}
+
+.animate-blob-1 { animation: blobDrift1 16s ease-in-out infinite; }
+.animate-blob-2 { animation: blobDrift2 20s ease-in-out infinite; }
+.animate-blob-3 { animation: blobDrift3 24s ease-in-out infinite; }
+
+/* Hero 3D polyhedron auto-rotation */
+@keyframes polyhedronSpin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+.animate-polyhedron-spin {
+  animation: polyhedronSpin 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-blob-1,
+  .animate-blob-2,
+  .animate-blob-3,
+  .animate-polyhedron-spin,
+  .motion-grid::before {
+    animation: none !important;
+  }
+}

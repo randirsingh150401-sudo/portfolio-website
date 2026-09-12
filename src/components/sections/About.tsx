@@ -1,17 +1,19 @@
 import { motion } from "framer-motion"
 import { siteContent } from "../../data/content"
+import { useFadeUpVariants, viewportOnce } from "../../lib/motion"
 
 export function About() {
   const { about } = siteContent;
+  const fadeUp = useFadeUpVariants();
 
   return (
     <section id="about" className="py-24 md:py-32 relative">
       <div className="container px-6 mx-auto">
-        <motion.div 
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7 }}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewportOnce}
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-12 flex items-center gap-4">
