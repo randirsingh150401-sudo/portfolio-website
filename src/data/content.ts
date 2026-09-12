@@ -46,13 +46,6 @@ export const siteContent = {
       techStack: ["Python", "OpenAI Vision", "PyAutoGUI", "Desktop App"],
       imagePlaceholder: desktopAssistantImg,
     },
-    {
-      id: "project-3",
-      title: "3D Modern Website",
-      description: "A visually stunning website featuring interactive 3D elements and modern design principles, creating an immersive user experience.",
-      techStack: ["React", "Three.js", "React Three Fiber", "Framer Motion"],
-      imagePlaceholder: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1000",
-    }
   ],
   skills: {
     title: "Skills & Technologies",
