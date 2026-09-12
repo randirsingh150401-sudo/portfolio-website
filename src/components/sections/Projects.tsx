@@ -54,7 +54,7 @@ const ProjectCard = ({ project }: { project: any }) => {
           rotateX,
           transformStyle: "preserve-3d",
         }}
-        className="group relative rounded-3xl bg-surface/40 backdrop-blur-xl border border-white/10 p-2 overflow-hidden transition-[border-color,box-shadow] duration-500 shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4),0_0_60px_-12px_rgba(167,139,250,0.35)]"
+        className="group relative rounded-3xl bg-surface/40 backdrop-blur-xl border border-white/10 p-2 overflow-hidden transition-[border-color,box-shadow] duration-500 shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4),0_0_60px_-12px_rgba(232,121,249,0.35)]"
       >
         <div
           className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -67,7 +67,7 @@ const ProjectCard = ({ project }: { project: any }) => {
         />
 
         <div
-          className={`relative rounded-2xl overflow-hidden mb-6 border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35),0_0_30px_-12px_rgba(56,189,248,0.3)] ${project.videoPlaceholder ? 'w-full' : 'aspect-video'}`}
+          className={`relative rounded-2xl overflow-hidden mb-6 border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.35),0_0_30px_-12px_rgba(251,146,60,0.3)] ${project.videoPlaceholder ? 'w-full' : 'aspect-video'}`}
           style={{ transform: "rotateX(4deg) rotateY(-6deg) translateZ(30px)" }}
         >
           {project.videoPlaceholder ? (

@@ -3,9 +3,9 @@
 @theme {
   --font-display: "Outfit", sans-serif;
   --font-sans: "Inter", sans-serif;
-  --color-primary: #a78bfa; /* Soft violet */
-  --color-primary-hover: #8B5CF6;
-  --color-accent: #38bdf8; /* Sky blue */
+  --color-primary: #e879f9; /* Fuchsia */
+  --color-primary-hover: #d946ef;
+  --color-accent: #fb923c; /* Orange */
   --color-background: #0d0d0f; /* Light black */
   --color-surface: #161618; /* Slightly lighter */
   --color-text-primary: #f1f5f9;
@@ -56,8 +56,8 @@
   width: 200%;
   height: 200%;
   background-image:
-    linear-gradient(rgba(167, 139, 250, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(167, 139, 250, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(232, 121, 249, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 121, 249, 0.06) 1px, transparent 1px);
   background-size: 60px 60px;
   animation: gridMove 20s linear infinite;
 }
@@ -67,8 +67,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(167, 139, 250, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(56, 189, 248, 0.07) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(232, 121, 249, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(251, 146, 60, 0.07) 0%, transparent 60%);
 }
 
 @keyframes gridMove {
